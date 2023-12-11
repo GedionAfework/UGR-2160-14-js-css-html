@@ -16,41 +16,40 @@ p, h2, h3 {
     font-weight: 400;
     font-family: "Montserrat", sans-serif;
 }
-.abc {
+.header {
     display: block;
 }
-.header-nav {
+.header__nav {
   position: fixed;
   top: 0;
   width: 100vw;
   font-size: 11px;
   z-index: 1;
-  background-color: #AAAABC;
-  
-  
+  background-color: #aaaabc;
 }
-.unordered-header-nav {
+.header__nav-list {
   display: flex;
   justify-content: start;
 }
-.unordered-header-nav > li{
+.header__nav-list > li{
 
   list-style: none;
   text-decoration: none;
   padding: 8px;
 } 
-ul.unordered-header-nav {
+ul.header__nav-list {
     margin: 0px;
     padding-left: 0px;
     justify-content: center;
 }
-.unordered-header-nav > li > a {
+.header__nav-link {
   text-decoration: none;
+  font-size: 12px;
 }
-.unordered-header-nav > li > a:hover {
+.header__nav-link:hover {
     text-decoration: underline;
 }
-.unordered-header-nav > li > a:active {
+.header__nav-link:active {
     color: #2F365F;
     text-decoration: underline;
     font-weight: bold;
@@ -95,7 +94,7 @@ footer {
 /* Common Ends Here*/
 
 /* Index Page Starts Here */
-.index-main-article-h3 {
+.index-main__article-h3 {
     margin-top: 0px;
     color: #F8F8FF;
     width: 95%;
@@ -104,7 +103,7 @@ footer {
     font-family: "Montserrat", sans-serif;
     margin-bottom: 14px;
   }
-  #name-tag {
+  .index-main__name {
     color: #F9F871;
     font-size: small;
     font-weight: bold;
@@ -113,13 +112,13 @@ footer {
   .index-main {
     margin-bottom: -5px;
 }
-.index-main-aside-image {
+.index-main__aside-image {
     display: inline-block;
     width: 100%;
     border-radius: 4px;
     margin-bottom: 8px;
 }
-.index-main-aside-image-2 {
+.index-main__aside-image-2 {
     border-radius: 4px;
     display: inline-block;
     width: 100%;
@@ -127,7 +126,7 @@ footer {
     margin-left: 0px;
     margin-bottom: 8px;
 }
-.index-main-article-h3-2 {
+.index-main__article-h3-2 {
     margin-top: 0px;
     color: white;
     width: 95%;
@@ -137,48 +136,48 @@ footer {
     font-weight: 400;
     font-family: "Montserrat", sans-serif;
   }
-.header-footer-index {
+.footer__header-index {
     margin-bottom: 0px;
     margin-top: 2px;
     font-size: medium;
     margin-bottom: 5px;
 }
-.left-side {
+.footer__left-side {
   display: inline-block;
   width: 45%;
   vertical-align: top;
   margin-left: 3px;
   margin-right: 5px;
 }
-.phone-index {
+.footer__phone-index {
   display: flex;
   width: 130px;
   margin-right: 0px;
 }
-.image-phone-index {
+.footer__image-phone-index {
   width: 24px;
   height: 24px;
   width: 30px;
   display: inline-block;
 }
-.paragraph-phone-index {
+.footer__paragraph-phone-index {
   font-size: 10px;
   display: inline-block;
   margin-left: 3px;
   margin-top: 5px;
   vertical-align: top;
-  width: 100px;
+  width: 100%;
 }
-.email-index {
+.footer__email-index {
     display: flex;
     width: 130px;
 }
-.email-index-image {
+.footer__email-index-image {
     width: 24px;
     height: 24px;
     display: inline-block;
 }
-.email-index-paragraph {
+.footer__email-index-paragraph {
     font-size: 12px;
   display: inline-block;
   margin-left: 3px;
@@ -186,20 +185,20 @@ footer {
   vertical-align: top;
   width: 100px;
 }
-.link-email-index {
+.footer__link-email-index {
     color: white;
     text-decoration: none;
 }
-.linkedin-index {
+.footer__linkedin-index {
     display: flex;
   width: 130px;
 }
-.linkedin-index-image {
+.footer__linkedin-index-image {
     width: 24px;
     height: 24px;
     display: inline-block;
 }
-.linkedin-index-paragraph {
+.footer__linkedin-index-paragraph {
   font-size: 12px;
   display: inline-block;
   margin-left: 3px;
@@ -207,16 +206,16 @@ footer {
   vertical-align: top;
   width: 100px;
 }
-.link-linkedin-index {
+.footer__link-linkedin-index {
     color: white;
     text-decoration: none;
 }
-.index-footer-aside {
+.footer__aside {
     display: inline-block;
     width: 45%;
     margin-right: 0px;
 }
-.index-footer-aside > h2 {
+.footer__aside > h2 {
     font-size: medium;
     margin-top: 2px;
 }
@@ -226,12 +225,12 @@ iframe {
     display: inline-block;
     vertical-align: top;
 }
-.iframe-paragraph {
+.footer__iframe-paragraph {
     display: inline-block;
     margin-left: 4px;
     width: 45%;
 }
-.iframe-paragraph > p {
+.footer__iframe-paragraph > p {
     margin-top: 0px;
 }
 /* Index page Ends Here*/
@@ -241,7 +240,7 @@ iframe {
 .about-main {
     margin-bottom: -10px;
 }
-#childhoods {
+.childhood__title {
     margin-top: 0px;
     margin-bottom: 5px;
 }
@@ -250,18 +249,18 @@ iframe {
     margin-top: 6px;
     margin-bottom: 8px;
 }
-.first-childhood-picture {
+.childhood__picture.first-childhood__picture{
     width: 30%;
     display: inline-block;
     margin-right: 6px;
     vertical-align: top;
 }
-.first-child-first > article {
+.childhood__article.first-childhood__article {
     width: 60%;
     display: inline-block;
     margin-right: 6px;
 }
-.first-child-first > article > h3 {
+.childhood__article.first-childhood__article > h3 {
     margin-top: 0px;
     font-size: 12px;   
 }
@@ -269,7 +268,7 @@ iframe {
     color: white;
     text-decoration: none;
 }
-.first-childhood-video {
+.childhood__video.first-childhood__video {
     width: 90%;
     justify-content:center;
 }
@@ -278,21 +277,22 @@ iframe {
     margin-top: 6px;
     margin-bottom: 8px;
 }
-.second-childhood-picture {
+.childhood__picture.second-childhood__picture {
     width: 30%;
     display: inline-block;
     margin-right: 6px;
     vertical-align: top;
 }
-.second-child-second > article {
+.childhood__article.second-childhood__article {
     width: 60%;
     display: inline-block;
     margin-right: 6px;
+    vertical-align: top;
 }
-.second-child-second > article > h3 {
-    margin-top: 0px;  
+.childhood__text {
+    margin-top: 0px;
 }
-.second-childhood-video {
+.childhood__video.second-childhood__video {
     width: 90%;
     justify-content:center;
 }
@@ -301,23 +301,23 @@ iframe {
     margin-top: 6px;
     margin-bottom: 8px;
 }
-.third-childhood-picture {
+.childhood__picture.third-childhood__picture {
     width: 30%;
     display: inline-block;
     margin-right: 6px;
     vertical-align: top;
 }
-.third-child-article {
+.childhood__article.third-childhood__article {
     width: 60%;
     display: inline-block;
     margin-right: 6px;
 }
-.third-child-paragraph {
+.childhood__text.third-child__paragraph {
     display: inline-block;
     vertical-align: top;
     margin-top: 0px;
 }
-.third-childhood-video {
+.childhood__video.third-childhood__video {
     margin-top: 5px;
     width: 90%   
 }
@@ -325,106 +325,86 @@ iframe {
     margin-bottom: 0px;
     font-size: 25px;
 }
-#first-hobbie-tag {
+.hobbies__subtitle {
     margin-top: 4px;
     margin-bottom: 6px;
     font-size: 25px;
 }
-.first-hobbie-paragraph {
+.hobbies__paragraph.first-hobby-paragraph {
     margin-top: 0px;
 }
-.book-lists > ul > li > a {
+.hobbies__book-link {
     color: white;
     text-decoration: none;
 }
-.book-lists > ul > li > a:hover {
+.hobbies__book-link:hover {
     color: black;
     text-decoration: underline;
 }
-.book-lists > ul > li > a:visited {
+.hobbies__book-link:visited {
     color: #F9F871;
 }
-#third-hobbie-tag {
-    margin-top: 4px;
-    margin-bottom: 6px;
-    font-size: 25px;
-}
-.third-hobbie-paragraph {
+.hobbies__paragraph.second-hobby-paragraph {
     margin-top: 0px;
 }
-.hobbie-audio {
+.hobbies__audio {
     width: 100%;
     color: #2F365F;
 }
-#second-hobbie-tag {
+#hobbies__item.third-hobby-tag {
     margin-top: 4px;
     margin-bottom: 6px;
     font-size: 25px;
 }
-.second-hobbie-paragraph {
+.hobbies__paragraph.third-hobby-paragraph {
     margin-top: 0px;
 }
-.second-hobbie-video {
+.hobbies__video-container.third-hobby-video {
     width: 90%;
 }
-.video-second {
+.hobbies__video.video-third {
     width: 100%;
 }
-#fourth-hobbie-tag {
-    margin-top: 4px;
-    margin-bottom: 6px;
-    font-size: 25px;
-}
-.writing-picture {
+.hobbies__image.writing-picture {
     width: 100%;
 }
-#fifth-hobbie-tag {
-    margin-top: 4px;
-    margin-bottom: 6px;
-    font-size: 25px;
-}
-.fourth-hobbie-paragraph {
+.hobbies__paragraph.fourth-hobby-paragraph {
     margin-top: 0px;
 }
- .fifth-hobbie-paragraph {
+ .hobbies__paragraph.fifth-hobby-paragraph {
     margin-top: 8px;
 }
-.youtubers > ul > li > a {
+.youtubers__link {
     color: white;
     text-decoration: none;
 }
-.youtubers > ul > li > a:hover {
+.youtubers__link:hover {
     color: black;
     text-decoration: underline;
 }
-.youtubers > ul > li > a:visited {
+.youtubers__link:visited {
     color: #F9F871;
 }
-#sixth-hobbie-tag {
-    margin-top: 4px;
-    margin-bottom: 6px;
-    font-size: 25px;
-}
-.sixth-hobbie-paragraph {
+.hobbies__paragraph.sixth-hobby-paragraph {
     margin-top: 0px;   
 }
-.about-nav > p {
+.footer__nav footer__nav.about-nav > p {
     margin-top: 0px;
     margin-bottom: 4px;
     margin-left: 5px;
 }
-.about-nav > ul {
+.footer__nav.about-nav > ul {
     margin: 0px;
 }
-.about-nav > ul > li > a {
+.footer__nav.about-nav > ul > li > a {
     color: white;
     text-decoration: none;
 }
-.about-nav > ul > li > a:hover {
+.footer__nav.about-nav > ul > li > a:hover {
     color: black;
     text-decoration: underline;
 }
-.about-nav > ul > li > a:visited {
+.footer__nav.about-nav > ul > li > a:visited {
     color: #F9F871;
 }
 .about-end {
@@ -442,26 +422,26 @@ iframe {
 .education-main {
     margin-bottom: -10px;
 }
-.quote {
+.education-main__quote {
     font-family: geneva;
     color: #D5E9E8;
     background-color: #00002A;
 }
-.school-list {
+.education-main__school-list {
     margin-bottom: 0px;
 }
-.school-list > li > a {
+.education-main__school-link {
     color: white;
     text-decoration: none;
 }
-.school-list > li > a:hover {
+.education-main__school-link:hover {
     color: black;
     text-decoration: underline;
 }
-.school-list > li > a:visited {
+.education-main__school-link:visited {
     color: #F9F871;
 }
-.olive-academy-image {
+.education-main__school-image {
     width: 28%;
     display: inline-block;
 }
@@ -470,7 +450,7 @@ iframe {
     margin-top: 0px;
     margin-bottom: 2px;
 }
-.olive-academy {
+.education-main__school-description {
     margin-top: 0px;
     margin-right: 0px;
     width: 68%;
@@ -482,11 +462,11 @@ iframe {
     margin-top: 8px;
     margin-bottom: 8px;
 }
-.Cathedral-logo {
+.lccs-first__logo {
     width: 28%;
     display: inline-block;
 }
-.cathedral-first {
+.lccs-first__description {
     margin-top: 0px;
     margin-right: 0px;
     width: 68%;
@@ -498,11 +478,11 @@ iframe {
     margin-top: 8px;
     margin-bottom: 8px;
 }
-.cathedral-church {
+.cathe-education-two__image.cathedral-church {
     width: 28%;
     display: inline-block;
 }
-.cathedral-second {
+.cathe-education-two__text.cathedral-second {
     margin-top: 0px;
     margin-right: 0px;
     width: 68%;
@@ -517,7 +497,7 @@ iframe {
     margin: 7px;
     border-radius: 12px;
 }
-.education-pictures > img {
+.education-pictures__photo {
     width: 100%;
     object-fit: cover;
     border-radius: 5%;
@@ -615,7 +595,7 @@ iframe {
 /* Education Page Ends Here */
 
 /* Goal Page Starts Here */
-.goal-article-header {
+.goal-article__header {
     margin: 0px;
 }
 .goal-article {
@@ -624,24 +604,24 @@ iframe {
 .goal-unordered > li {
     font-size: 14px;
 }
-#physical_growth {
+#physical_growth__title {
     margin-top: 4px;
     margin-bottom: 6px;
     font-size: 25px;
 }
-.physical-goal-main {
+.first-goal__main.physical-goal-main {
     display: flex;
 }
-.physical-image {
+.figure-goal-first__image.physical-image {
     width: 100%;
     display: inline-block;
 }
-.figure-goal-first {
+.physical-goal-main__figure.figure-goal-first {
     margin: 0px;
     display: inline-block;
     width: 30%;
 }
-.first-goal-paragraph {
+.physical-goal-main__paragraph.first-goal-paragraph {
     width: 67%;
     margin-top: 0px;
     margin-left: 8px;
@@ -649,56 +629,56 @@ iframe {
 .physical-table-first {
     width: 100%;
 }
-#educational_growth {
+#educational_growth__title {
     margin-top: 10px;
     margin-bottom: 6px;
     font-size: 25px;
 }
-.educational-image {
+.figure-goal-second__educational-image {
     width: 100%;
     display: inline-block;
 }
-.figure-goal-second {
+.educational-goal-main__figure.figure-goal-second {
     margin: 0px;
     display: inline-block;
     width: 28%;
     vertical-align: top;
 }
-.second-goal-paragraph {
+.educational-growth__second-goal.second-goal-paragraph {
     width: 67%;
     margin-right: 0px;
     margin-top: 0px;
     margin-left: 8px;
     display: inline-block;
 }
-.education-table-first {
+.first-goal__education-table.education-table-first {
     width: 100%;
 }
-.figure-goal-third {
+.work-goal-main__figure.figure-goal-third {
     margin: 0px;
     display: inline-block;
     width: 30%;
     vertical-align: top; 
 }
-.work-goal-main {
+.work-growth__third-goal.third-goal {
     display: flex;
 }
-.work-image {
+.figure-goal-third__work-image {
     width: 100%;
     display: inline-block;
 }
-.third-goal-paragraph {
+.work-goal-main__third-goal-paragraph.third-goal-paragraph {
     width: 67%;
     margin-top: 0px;
     margin-left: 8px;
     display: inline-block;
 }
-#work_growth {
+#work_growth__title {
     margin-top: 10px;
     margin-bottom: 6px;
     font-size: 25px;
 }
-.work-table {
+.third-goal__work-table {
     width: 100%;
 }
 .education-left {
@@ -787,7 +767,7 @@ iframe {
     margin-bottom: 7px;
     font-size: 25px;
 }
-.tutoring-paragraph {
+.experience-tutoring__paragraph {
     margin-top: 0px;
     margin-bottom: 0px;
 }
@@ -807,7 +787,7 @@ iframe {
 .stem-pictures > img {
     width: 100%;
 }
-.stem-power-paragraph {
+.experience-stem-power__paragraph {
     margin-top: 7px;
 }
 #volunteer {
@@ -815,7 +795,7 @@ iframe {
     font-size: 25px;
     margin-bottom: 7px;
 }
-.volunteering-image {
+.volunteering-experience__image {
     width: 100%;
     margin-bottom: 7px;
 }
@@ -828,34 +808,48 @@ iframe {
     font-size: 25px;
     margin-bottom: 7px;
 }
-.data_science > img {
+.coursera-experience__data_science > img {
     width: 28%;
     display: inline-block;
 }
-.coursera-paragraph {
+.coursera-experience__paragraph {
     margin: 0px;
     display: inline-block;
     width: 68%;
     vertical-align: top;
 }
 .python_one {
-    margin-top: 5px;
+    width: 48%;
+    display: inline-block;
+}
+.coursera-experience__paragraph_2 {
+    margin: 0px;
+    display: inline-block;
+    width: 68%;
+    vertical-align: top;
 }
 .python_one > img {
+    width: 28%;
+    display: inline-block;
+}
+.coursera-experience__python_one {
+    margin-top: 5px;
+}
+.coursera-experience__python_one > img {
     width: 30%;
     display: inline-block;
 }
-.python_two {
+.coursera-experience__python_two {
     margin-top: 5px;
 }
-.python_two > img {
+.coursera-experience__python_two > img {
     width: 30%;
     display: inline-block;
 }
-.front-end {
+.coursera-experience__front-end {
     margin-top: 5px;
 }
-.front-end > img {
+.coursera-experience__front-end > img {
     width: 30%;
     display: inline-block;
 }
@@ -864,11 +858,11 @@ iframe {
     font-size: 25px;
     margin-bottom: 7px;
 }
-.sat-image {
+.sat-experience__image {
     width: 30%;
     display: inline-block;
 }
-.sat-paragraph {
+.sat-experience__paragraph {
     margin: 0px;
     display: inline-block;
     width: 68%;
@@ -883,7 +877,7 @@ iframe {
     width: 30%;
     display: inline-block;
 }
-.duolingo-paragraph {
+.duolingo-experience__paragraph {
     margin: 0px;
     display: inline-block;
     width: 68%;
@@ -916,3 +910,353 @@ iframe {
     margin-bottom: -5px;
 }
 /* Goal Page Ends Here */
+
+
+@media (min-width: 480px) {
+    .header__nav-list {
+        justify-content: right;
+        margin-right: 5px;
+    }
+    .header__nav-link {
+        float: right;
+        font-size: 14px;
+        padding: 4px;
+        font-size: 20px;
+    }
+    p, h2, h3, li, a, td {
+        font-size: 16px;
+    }
+    th {
+        font-size: 18px;
+    }
+    /*Common Ends Here */
+    
+    /* Index Starts Here */
+    .index-main__name {
+        font-size: 18px;
+    }
+    .index-main__article-h3 {
+        width: 100%;
+        display: inline-block;
+        padding-top: 10px;
+    }
+    .index-main__article {
+        display: inline-block;
+        width: 55%;
+    }
+    .index-main__aside-image {
+        width: 100%;
+        font-size: 8px;
+        display: inline-block;
+        vertical-align: auto;
+        margin-left: 15px;
+        padding-top: 10px;
+    }
+    .index-main__aside {
+        width: 40%;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .index-main__article-h3-2 {
+        width: 100%;  
+        font-size: 16px;   
+        display: inline-block;
+    }
+    .index-main__aside-image-2 {
+        width: 40%;
+        font-size: 8px;
+        display: inline-block;
+        vertical-align: auto;
+        margin-left: 15px;
+    }
+    .index-main__article-2 {
+        display: inline-block;
+        width: 55%;
+    }
+    .footer__header-index {
+        font-size: 20px;
+    }
+    .footer__left-side > div > p {
+        font-size: 16px;
+    }
+    .footer__aside > h2 {
+        font-size: 20px;
+    }
+    .footer__phone-index {
+        width: 100%;
+    }
+    .footer__paragraph-phone-index {
+        width: 200px;
+    }
+    /* Index Page Ends Here*/
+    /* About Page */
+    .childhood__title {
+        padding-top: 10px;
+    }
+    .childhood__item.first-childhood {
+        display: inline-block;
+        width: 48%;
+        vertical-align: top;
+
+    }
+    .childhood__content.first-childhood__content > article > h3 {
+        width: 100%;
+        font-size: 16px;
+
+    }
+    .childhood__item.second-childhood {
+        display: inline-block;
+        width: 48%;
+    }
+    .childhood__content.second-childhood__content > article > h3 {
+        width: 100%;
+        font-size: 15px;
+}
+    .childhood__item.third-childhood {
+        display: inline-block;
+        width: 48%;
+    }
+    .third-child-third > article > h3 {
+        width: 100%;
+        font-size: 15px;
+}
+    #hobbies-tag {
+        font-size: 34px;
+    }
+    #hobbie__item.first-hobbie-tag {
+        font-size: 25px;
+    }
+    .hobbies__item.first-hobby {
+        display: inline-block;
+        width: 48%;
+    }
+    .hobbies__item.second-hobby {
+        vertical-align: top;
+        display: inline-block;
+        width: 48%;
+    }
+    .hobbies__item.third-hobby {
+        display: inline-block;
+        width: 48%;
+    }
+    .hobbies__item.fourth-hobby {
+        vertical-align: top;
+        display: inline-block;
+        width: 48%;
+    }
+    .hobbies__item.fifth-hobby {
+        display: inline-block;
+        width: 48%;
+    }
+    .hobbies__item.sixth-hobby {
+        vertical-align: top;
+        display: inline-block;
+        width: 48%;
+    }
+    /*About Page Ends Here*/
+    /*Education Page */
+    .education-main__school-first {
+        display: flex;
+    }
+    .education-main__school-image {
+        height: 100%;
+    }
+    .lccs-first__education {
+        display: flex;
+    }
+    .lccs-first__logo {
+        height: 100%;
+    }
+    .cathe-education-two {
+        display: flex;
+    }
+    .cathe-education-two__image.cathedral-church {
+        height: 100%;
+    }
+    .physical-growth__first-goal.first-goal {
+        display: flex;
+    }
+    .physical-goal-main__figure.figure-goal-first {
+        height: 100%;
+    }
+    .first-goal__education-table.education-table-first {
+        height: 100%;
+    }
+    .educational-growth__second-goal.second-goal {
+        display: flex;
+    }
+    .second-goal__educational-goal-main.educational-goal-main {
+        display: flex;
+    }
+    .second-goal__grades-table {
+        height: 100%;
+    }
+    .educational-goal-main__figure.figure-goal-second {
+        height: 100%;
+    }
+    .work-growth__third-goal.third-goal {
+        display: flex;
+    }
+    .work-goal-main__figure.figure-goal-third {
+        height: 100%;
+    }
+    .third-goal__work-table {
+        height: 100%;
+    }
+    .coursera-experience__data_science {
+        display: inline-block;
+        width: 48%;
+    }
+    .coursera-experience__python_one {
+        display: inline-block;
+        width: 48%;
+    }
+    .coursera-experience__python_two {
+        display: inline-block;
+        width: 48%;
+    }
+    .coursera-experience__front-end {
+        display: inline-block;
+        width: 48%;
+    }
+    .sat-experience {
+        display: inline-block;
+        width: 48%;
+    }
+    .duolingo-experience {
+        display: inline-block;
+        width: 48%;
+    }
+    /*Educational Page Ends Here*/
+    /* Goal Page*/
+    .goal-article__header {
+        padding-top: 16px;
+    }
+    /* Goal Page Ends Here */
+    /* Experience Page*/
+    #tutoring {
+        padding-top: 15px;
+    }
+    /* Experience Page Ends Here*/
+}
+@media (min-width: 768px) {
+    ul.header__nav-list {
+        justify-content: right;
+        margin-right: 5px;
+    }
+    .header__nav-link {
+        float: right;
+        font-size: 28px;
+        
+    }
+    p, h2, h3, li, a, td, article, q, footer {
+        font-size: 28px;
+    }
+    th {
+        font-size: 18px;
+    }
+    /* Common Ends Here */
+
+    /*Index Starts Here */
+    .index-main__name {
+        font-size: 28px;
+    }
+    .index-main__aside-image {
+        padding-top: 25px;
+    }
+    .index-main__article-h3 {
+        width: 100%;
+        font-size: 13px;
+        display: inline-block;
+        padding-top: 25px;
+    }
+    .index-main__article-h3 {
+        font-size: 28px;
+    }
+    .index-main__article-h3-2 {
+        font-size: 28px;
+    }
+    .footer__header-index {
+        font-size: 28px;
+    }
+    .footer__left-side > div > p {
+        font-size: 24px;
+    }
+    .footer__aside > h2 {
+        font-size: 20px;
+    }
+    .footer__phone-index {
+        width: 100%;
+    }
+    /* About Page */
+    .childhood__title {
+        padding-top: 20px;
+    }
+    .childhood__content.first-childhood__content > article > h3 {
+        font-size: 28px;
+    }
+    .childhood__content.second-childhood__content > article > h3 {
+        font-size: 27px;
+    }
+    /*Goal Page */
+    .goal-article__header {
+        padding-top: 24px;
+    }
+    /* Goal Page Ends Here */
+    /* Experience Page*/
+    #tutoring {
+        padding-top: 20px;
+    }
+    /* Experience Page Ends Here*/
+
+}
+
+@media (min-width: 1024px) {
+    #tutoring {
+        font-size: 40px;
+    }
+    #stem {
+        font-size: 40px;
+    }
+    #volunteer {
+        font-size: 40px;
+    }
+    #coursera {
+        font-size: 40px;
+    }
+    #sat {
+        font-size: 40px;
+    }
+    #duolingo {
+        font-size: 40px;
+    }
+    .volunteer-paragraph {
+        font-size: 30px;
+    }
+    p {
+        font-size: 30px;
+    }
+    .childhood {
+        margin-right: 0px;
+        padding-right: 0px;
+    }
+    .childhood__item.first-childhood {
+        display: inline-block;
+        width: 33%;
+    }
+    .childhood__item.second-childhood {
+        display: inline-block;
+        width: 33%;
+        vertical-align: top;
+    }
+    .childhood__item.third-childhood {
+        display: inline-block;
+        width: 33%;
+    }
+    /* Experience Page*/
+    #tutoring {
+        padding-top: 25px;
+    }
+    /* Experience Page Ends Here*/
+
+}
